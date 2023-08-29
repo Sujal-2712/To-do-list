@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To Do list</title>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Geologica:wght@500&family=Poppins:wght@200;400&family=Public+Sans:wght@300&family=Roboto:wght@300&display=swap");
+
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: "Poppins";
+    }
+
+    body {
+      background-color: rgb(22, 22, 52);
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin: 0 15%;
+    
+  
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .content {
+      border: 2px solid rgb(154, 154, 154);
+      text-align: center;
+      margin: 3%;
+      padding: 4%;
+      height: 225px;
+      border-radius: 15px;
+      margin-bottom: 0;
+      width: 70%;
+      color: darkblue;
+      background-color:aliceblue;
+    }
+
+    .title {
+      margin: 2%;
+    }
+
+    .temp {
+      margin: 1% 0;
+    }
+
+    .input {
+      margin-right: 20px;
+      margin: 2%;
+      height: 45px;
+      width: 60%;
+    }
+
+    .btn {
+      height: 45px;
+      width: 20%;
+      font-size: 2.5vmin;
+    }
+
+    .list {
+      width: 70%;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    .btn {
+      background-color: darkblue;
+      color: aliceblue;
+      cursor: pointer;
+      border: 1px solid black;
+      border-radius: 15px;
+    }
+
+    .btn:hover {
+      background-color: darkred;
+    }
+
+    ul li {
+      list-style: none;
+      padding: 12px 8px 12px 40px;
+      background: #8b8b8b;
+      font-size: 18px;
+      border-radius: 15px;
+      color: rgb(44, 44, 44);
+      border: 2px solid black;
+      border-top: 0;
+    }
+
+    .close {
+      float:right;
+      font-size: 3.3vmin;
+      text-align: center;
+      height: 35px;
+      border-radius: 50%;
+      width: 5%;
+      cursor: pointer;
+    }
+    #task{
+      border-radius:15px;
+      padding: 10px;
+      background: transparent;
+    }
+    .close:hover {
+      background-color: #f44336;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="content">
+      <h1 class="title">To Do List</h1>
+      <div class="temp">
+        <input type="text" id="task" class="input" placeholder="Title..." />
+        <button onclick="newElement()" class="btn">Add to List</button>
+      </div>
+    </div>
+
+    <div class="list">
+      <ul id="list">
+      </ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
